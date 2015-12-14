@@ -1,0 +1,59 @@
+﻿/* Author: Yangz */
+/* Time: 2014/07/23 */
+
+/* CSS Reset */
+html{ overflow-x:hidden; }
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select{ margin:0; padding:0 }
+table{ border-collapse:collapse; border-spacing:0; }
+fieldset, img{ border:0 none; height:auto }
+ul, ol, li{ list-style:none; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+input, textarea, select{ font-family:inherit; font-size:inherit; font-weight:inherit; *font-size:100%
+}
+/* coommon */
+.clearfix:after{ content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.clearfix{ *zoom:1;
+}
+.fl{ float:left; }
+.fr{ float:right; }
+body{ font:14px/24px "Microsoft Yahei"; color:#777; }
+a{ text-decoration:none }
+::-moz-selection{ background-color:#da251d; color:#fff; text-shadow:none; }
+::selection{ background-color:#da251d; color:#fff; text-shadow:none; }
+@font-face{
+    font-family:"FZLTCXHJT";
+    src:url("../fonts/FZLTCXHJW.TTF") format("truetype");
+}
+
+/********* banner 大图 **********/
+#datu{width:100%;overflow:hidden; height:300px; background:url(../images/jishu_banner.jpg) no-repeat center top;}
+
+
+/* Author: Yangz */
+/* Time: 2014/11/17 */
+
+
+/*body{ min-width:1000px}*/
+.w1000{ max-width:1000px; margin-left:auto; margin-right:auto; }
+.w1170{ max-width:1170px; margin-left:auto; margin-right:auto; }
+#body{ margin-top:16px }
+
+/*技术服务*/
+.service_list{ margin-bottom:50px }
+.service_list li{ border-bottom:1px solid #f1f0f0; clear:both; }
+.service_list li .w1000{ position:relative; }
+.sl_icon{ width:22%; background-position:center center; background-repeat:no-repeat; position:absolute; height:100% }
+.sl_txt{ margin-left:22%; padding:50px 50px 35px 0 }
+.sl_1 .sl_icon{ background-image:url(../images/icon_serviceb.png) }
+.sl_2 .sl_icon{ background-image:url(../images/icon_serviceb-02.png) }
+.sl_3 .sl_icon{ background-image:url(../images/icon_serviceb-03.png) }
+.sl_4 .sl_icon{ background-image:url(../images/icon_serviceb-04.png) }
+.sl_5 .sl_icon{ background-image:url(../images/icon_serviceb-05.png) }
+.sl_6 .sl_icon{ background-image:url(../images/icon_serviceb-06.png) }
+.sl_7 .sl_icon{ background-image:url(../images/icon_serviceb-07.png) }
+.sl_txt h3{ font-size:18px; color:#000; font-weight:normal; margin-bottom:10px }
+.sl_txt p{ line-height:30px; color:#666; margin-bottom:30px }
+.sl_keywords{ color:#277900 }
+
+
+
