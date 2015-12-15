@@ -5,7 +5,7 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>顶新科技</title>
+    <title>顶新软件</title>
     <link href="./vendor/css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/index.css" rel="stylesheet">
     <script src="./vendor/js/jquery.min.js"></script>
@@ -20,7 +20,7 @@
 <script>
 $(function(){
 
-    $(document).on('mouseenter','.navbar li',function(){
+    $(document).on('mouseover','.navbar li',function(){
         var _this = $(this),
             left = _this.position().left;
         $('.sidebar').css({'transform':'translateX('+left+'px)'});
@@ -39,31 +39,61 @@ $(function(){
                 <a href="index.html"><img src="./images/logo.png" alt=""></a>
             </div>
             <div class="navbar pull-right">
+                <button type="button" data-opt="off" class="btn btn-default bar"><i class="glyphicon glyphicon-menu-hamburger"></i></button>
                 <ul>
                     <li class="active">
                         <a href="#!">首页</a>
                     </li>
                     <li>
                         <a href="#!">解决方案</a>
+                        <ul class="child">
+                            <li><a href="#!">旅游</a></li>
+                            <li><a href="#!">电商</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#!">技术服务</a>
+                        <ul class="child">
+                            <li><a href="#!">系统远程代维</a></li>
+                            <li><a href="#!">代维推广</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#!">软件开发</a>
+                        <ul class="child">
+                            <li><a href="#!">网站开发</a></li>
+                            <li><a href="#!">APP开发</a></li>
+                            <li><a href="#!">微信开发</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#!">成功案例</a>
                     </li>
                     <li>
                         <a href="#!">IDC服务</a>
+                        <ul class="child">
+                            <li><a href="#!">私有云</a></li>
+                            <li><a href="#!">服务托管</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#!">关于我们</a>
                     </li>
-                    <li>
-                        <a href="#!">aa</a>
+                    <li class="search">
+                        <a href="#!"><i class="glyphicon glyphicon-search"></i></a>
+                        <ul class="child submit">
+                            <li>
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                                        <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+                                        <a type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i></a>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
                     </li>
+                        
                 </ul>
                 <span class="sidebar"></span>
             </div>
